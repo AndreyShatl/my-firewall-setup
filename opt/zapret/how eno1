@@ -1,0 +1,19 @@
+○ zapret-simple.service - Zapret Anti-Censorship
+     Loaded: loaded (]8;;file://debian/etc/systemd/system/zapret-simple.service\/etc/systemd/system/zapret-simple.service]8;;\; [0;1;32menabled[0m; preset: [0;1;32menabled[0m)
+     Active: inactive (dead) since Fri 2025-10-31 09:58:35 MSK; 1h 12min ago
+   Duration: 40min 25.499s
+ Invocation: b8f00f8bb8b047cbbf303eb91c62a52f
+   Main PID: 8239 (code=killed, signal=TERM)
+   Mem peak: 2M
+        CPU: 80ms
+
+окт 31 09:18:10 debian nfqws[8238]: opening library handle
+окт 31 09:18:10 debian nfqws[8238]: unbinding existing nf_queue handler for AF_INET (if any)
+окт 31 09:18:10 debian nfqws[8238]: binding nfnetlink_queue as nf_queue handler for AF_INET
+окт 31 09:18:10 debian nfqws[8238]: binding this socket to queue '0'
+окт 31 09:18:10 debian nfqws[8238]: setting copy_packet mode
+окт 31 09:18:10 debian nfqws[8238]: initializing raw sockets bind-fix4=0 bind-fix6=0
+окт 31 09:18:10 debian systemd[1]: Started zapret-simple.service - Zapret Anti-Censorship.
+окт 31 09:58:35 debian systemd[1]: Stopping zapret-simple.service - Zapret Anti-Censorship...
+окт 31 09:58:35 debian systemd[1]: zapret-simple.service: Deactivated successfully.
+окт 31 09:58:35 debian systemd[1]: Stopped zapret-simple.service - Zapret Anti-Censorship.

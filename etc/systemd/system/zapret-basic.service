@@ -1,0 +1,12 @@
+[Unit]
+Description=Zapret Basic DPI Bypass
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/opt/zapret/nfq/nfqws --qnum=200 --dpi-desync=fake --filter-tcp=80,443 --hostlist=/opt/zapret/ipset/zapret-hosts-user.txt
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target

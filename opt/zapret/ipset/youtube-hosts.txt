@@ -1,0 +1,24 @@
+youtube.com
+www.youtube.com
+m.youtube.com
+youtu.be
+ytimg.com
+googlevideo.com
+youtubei.googleapis.com
+ggpht.com
+www.google.com
+google.com
+
+# Дополнительные критически важные домены YouTube и Google
+youtube-nocookie.com
+www.youtube-nocookie.com
+s.youtube.com
+video.google.com
+apis.google.com
+googleapis.com
+www.googleapis.com
+gstatic.com
+fonts.gstatic.com
+csi.gstatic.com
+googleusercontent.com
+www.googleusercontent.com

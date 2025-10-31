@@ -1,0 +1,12 @@
+[Unit]
+Description=Zapret Aggressive DPI Bypass for YouTube
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/opt/zapret/nfq/nfqws --qnum=201 --dpi-desync=fake,multisplit --dpi-desync-split-seqovl=681 --dpi-desync-split-pos=1 --dpi-desync-fooling=badseq --dpi-desync-badseq-increment=10000000 --dpi-desync-repeats=2 --dpi-desync-fake-tls-mod=rnd,dupsid,sni=fonts.google.com --filter-tcp=80,443 --hostlist=/opt/zapret/ipset/youtube-hosts.txt
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target

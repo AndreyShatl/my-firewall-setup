@@ -1,0 +1,1 @@
+nfqws or /root/zapret-master/tpws/tpws or /root/zapret-master/mdig/mdig is not available. run "/root/zapret-master/install_bin.sh" or `make -C "/root/zapret-master" `

@@ -1,0 +1,16 @@
+* checking system
+Linux detected
+kernel: Linux version 6.12.48+deb13-amd64 (debian-kernel@lists.debian.org) (x86_64-linux-gnu-gcc-14 (Debian 14.2.0-19) 14.2.0, GNU ld (GNU Binutils for Debian) 2.44) #1 SMP PREEMPT_DYNAMIC Debian 6.12.48-1 (2025-09-20)
+distro: Debian GNU/Linux 13 (trixie)
+firewall type is nftables
+CURL=curl
+curl 8.14.1 (x86_64-pc-linux-gnu) libcurl/8.14.1 OpenSSL/3.5.1 zlib/1.3.1 brotli/1.1.0 zstd/1.5.7 libidn2/2.3.8 libpsl/0.21.2 libssh2/1.11.1 nghttp2/1.64.0 nghttp3/1.8.0 librtmp/2.3 OpenLDAP/2.6.10
+Release-Date: 2025-06-04, security patched: 8.14.1-2
+Protocols: dict file ftp ftps gopher gophers http https imap imaps ipfs ipns ldap ldaps mqtt pop3 pop3s rtmp rtsp scp sftp smb smbs smtp smtps telnet tftp ws wss
+Features: alt-svc AsynchDNS brotli GSS-API HSTS HTTP2 HTTP3 HTTPS-proxy IDN IPv6 Kerberos Largefile libz NTLM PSL SPNEGO SSL threadsafe TLS-SRP UnixSockets zstd
+* checking already running DPI bypass processes
+* checking privileges
+* checking prerequisites
+/root/zapret-master/nfq/nfqws or /root/zapret-master/tpws/tpws or /root/zapret-master/mdig/mdig is not available. run "/root/zapret-master/install_bin.sh" or `make -C "/root/zapret-master" `
+
+press enter to continue
