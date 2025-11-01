@@ -1,0 +1,22 @@
+[Unit]
+Description=Zapret DPI Bypass for Discord
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/opt/my-firewall-setup/opt/zapret/nfq/nfqws \
+    --qnum=202 \
+    --filter-tcp=80,443,1935 \
+    --filter-udp=80,443,1935 \
+    --hostlist=/opt/my-firewall-setup/opt/zapret/ipset/discord-hosts.txt \
+    --dpi-desync=disorder2 \
+    --dpi-desync-fooling=md5sig,badseq \
+    --dpi-desync-repeats=3 \
+    --dpi-desync-any-protocol \
+    --no-ipv6
+Restart=always
+RestartSec=5
+User=root
+
+[Install]
+WantedBy=multi-user.target
