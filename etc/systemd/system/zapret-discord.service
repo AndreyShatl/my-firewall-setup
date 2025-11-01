@@ -6,14 +6,11 @@ After=network.target
 Type=simple
 ExecStart=/opt/my-firewall-setup/opt/zapret/nfq/nfqws \
     --qnum=202 \
-    --filter-tcp=80,443,1935 \
-    --filter-udp=80,443,1935 \
+    --filter-tcp=80,443 \
     --hostlist=/opt/my-firewall-setup/opt/zapret/ipset/discord-hosts.txt \
     --dpi-desync=disorder2 \
     --dpi-desync-fooling=md5sig,badseq \
-    --dpi-desync-repeats=3 \
-    --dpi-desync-any-protocol \
-    --no-ipv6
+    --dpi-desync-repeats=3
 Restart=always
 RestartSec=5
 User=root
